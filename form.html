@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javaScript.js"></script>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body id="b">
+    <form>
+    <div class="container">
+        
+        
+        <div class="row">
+            <div class="col-md-12" ><h1 id="header">All Fields Are Mandatory</h1></div>
+            
+            
+           
+                <div class="col-md-3 offset-md-3">
+                    <label>Firstname</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="First Name" name="lirstname" required id="fName">
+                </div>
+                <div class="col-md-3 offset-md-3">
+                    <label >Lastname</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Last Name" name="lastname" required id="lName">
+                </div>
+                <div class="col-md-3 offset-md-3">
+                    <label>Gender</label>
+                </div>
+                <div class="col-md-1">
+                    <label>Male</label>
+                </div>
+                <div class="col-md-1">
+                    <input type="radio" name="gender" id="gen" value="Male" >
+                </div>
+                <div class="col-md-1">
+                    <label>Female</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="radio" name="gender" id="gen1" value="Female">
+                </div>
+                <div class="col-md-3 offset-md-3">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" placeholder="Address" required id="address" size="30">
+                </div>
+                <div class="col-md-3 offset-md-3">
+                    <label>Country</label>
+                </div>
+                <div class="multi-select-box col-md-6">
+                    <select class="multi-select" >
+                        <option>India</option>
+                        <option>America</option>
+                        <option>Russia</option>
+                        <option>China</option>
+                        <option>Canada</option>
+
+                    </select>
+                </div>
+                <div class="col-md-3 offset-md-3">
+                    <label>Mobile No</label>
+                </div> 
+                <div class="col-md-6">
+                    <input name="somename"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type = "number"
+                    maxlength = "10"
+                    id="Mnum">
+                </div>
+                <div class="col-md-3 offset-md-3" id="a">
+                    <label>Email</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" placeholder="Email-Id" name="email" required id="EmailId">
+                </div>
+                <div class="col-md-3 offset-md-3">
+                    <label>Password</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="Password" placeholder=" Password" name="pass" required id="passWord">
+                </div>
+                <div class="col-md-3 offset-md-3">
+                    <label >Confirm Password</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" placeholder="Confirm Password" name="cpassword" required id="cpassword">
+                </div>
+                <div class="col-md-6 offset-md-6">
+                <button type="button" id="b1" onclick="myFunction()"> Submit </button>
+                <button type="reset"  id="b1" onclick="reset()">Reset</button>
+                </div>
+
+            
+            
+            
+        </div>
+    </div>
+
+    </form>
+</body>
+</html>
